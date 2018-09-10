@@ -1,0 +1,83 @@
+mob1
+Galaxy S4
+Mobile
+Samsung
+Galaxy S4, 16 GB
+29990
+
+mob2
+Galaxy S3
+Mobile
+Samsung
+Galaxy S3, 16 GB
+12689
+
+mob3
+Nokia Lumia 630
+Mobile
+Nokia
+Nokia Lumia 630, 8 GB
+9650
+
+mob4
+Lenovo K8 Plus
+Mobile
+Lenovo
+Lenovo K8 Plus, 32 GB
+10999
+
+mob5
+Xolo Q800
+Mobile
+Xolo
+Xolo Q800, 4 GB
+9556
+
+mob6
+Sony Xperia XA1
+Mobile
+Sony
+Sony Xperia XA1, 32 GB
+16990
+
+mob7
+BB Z10
+Mobile
+Blackberry
+Blackberry Z10, 16GB
+8200 
+
+cam1
+Nikon A900 Point and Shoot
+Camera
+Nikon
+Nikon A900 Point and Shoot, 20MP
+20400
+
+cam2
+Sony DSC-W830 Point and Shoot
+Camera
+Sony
+Sony DSC-W830 Point and Shoot, 20.1 MP
+7990
+
+cam3
+Nikon Coolpix B700
+Camera
+Nikon
+Nikon Coolpix B700, 20.3 MP
+23026
+
+cam4
+Canon PowerShot SX430B
+Camera
+Canon
+Canon PowerShot SX430B, 20MP
+14435
+
+cam5
+Nikon Coolpix A10 Point and Shoot
+Camera
+Nikon
+Nikon Coolpix A10 Point and Shoot, 16.1 MP
+4990

@@ -1,0 +1,44 @@
+
+<script type="text/javascript">
+function validator()
+{
+var x=document.forms["myForm"]["firstname"].value;
+if (x==null || x=="")
+{
+  alert("Please enter first name");
+  return false;
+}
+var x=document.forms["myForm"]["lastname"].value;
+if (x==null || x=="")
+{
+  alert("Please enter last name");
+  return false;
+}
+var x=document.forms["myForm"]["email"].value;
+var at=x.indexOf("@");
+var dot = x.lastIndexOf(".");
+if(x.length>=50)
+{
+  alert("Please enter valid e-mail ID");
+  return false;
+}
+if (at<1 || dot<=at+2 || dot+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+var x=document.forms["myForm"]["mobile"].value;
+if (x.length > 11)
+{
+  alert("Maximum length of phone number is 11");
+  return false;
+}  
+var x=document.forms["myForm"]["password"].value;
+if (x.length <6)
+{
+  alert("Minimum length of password is 6");
+  return false;
+} 
+}
+</script>

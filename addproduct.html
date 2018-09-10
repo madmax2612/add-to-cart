@@ -1,0 +1,113 @@
+<html>
+<head>
+<style type="text/css">
+body{
+background-image:url("images/bg1.jpg");
+}
+h3{font-family: Calibri; font-size: 22pt; font-style: normal; font-weight: bold; color:slateblue;
+text-align: center; text-decoration: underline }
+table{font-family: Calibri; color:white; font-size: 11pt; font-style: normal;
+text-align:; background-color: SlateBlue; border-collapse: collapse; border: 2px solid navy}
+table.inner{border: 0px}
+</style>
+</head>
+<body>
+
+<form name="registration" action = "SignUp.php"  method="POST">
+ 
+<table align="center" cellpadding = "10">
+ 
+<!----- product Name ---------------------------------------------------------->
+<tr>
+<td> PRODUCT NAME</td>
+<td><input type="text" name="name"/>
+
+</td>
+</tr>
+ 
+<!----- city Name ---------------------------------------------------------->
+<tr>
+<td>CITY NAME</td>
+<td><input type="text" name="username"/>
+</td>
+</tr>
+
+ 
+<!----- product type -------------------------------------------------------->
+<tr>
+<td>PRODUCT TYPE</td>
+ 
+<td>
+
+<?php
+		$con=mysqli_connect('localhost','root','1234') or die(mysqli_connect_error());
+		mysqli_select_db($con,"addtocart") or die(mysqli_error($con)) ;  
+		
+	
+		$sql="select * from producttype";
+		$res=mysqli_query($con,$sql) or die(mysqli_error($con));
+		if(mysqli_num_rows($res)>0)
+		{	
+		echo '<select name="PRODUCT TYPE" id="ptype" onchange="show_btype(this.value)">';
+		
+		while($row=mysqli_fetch_assoc($res))
+			{
+			echo '<option value="'.$row['pcode'].'">' .$row['name'].'</option>';
+			}
+			echo '</select>';
+		}
+?>
+	
+
+	<!--city dropdown-->
+	<div id="brand"></div><br />
+	<div id="show_name"></div>  <!-- this div is optional -->
+	
+	<br />
+</select>
+</td>
+</tr>
+
+</select>
+</td>
+</tr>
+ 
+
+ 
+
+<tr>
+<td>UPLOAD IMAGE</td>
+<td>
+<input type="file" name="image"  />
+
+</td>
+</tr>
+ 
+
+<tr>
+<td>PRODUCT DESC</td>
+<td><textarea rows="5" cols="30"></textarea></td>
+
+</tr>
+ 
+
+<tr>
+<td>COST <br /><br /><br /></td>
+<td><input type="text" name="cost" id="cost" /></td>
+</tr>
+ 
+
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+
+<input type="button" value="Validate" onClick="checkmail()">
+<input type = "submit" value = "Add Product">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>

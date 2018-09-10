@@ -1,0 +1,30 @@
+a
+{
+	text-decoration:none
+}
+
+a:hover
+{
+	color:red
+}
+
+a.top:link{
+	background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.top:visited {
+	color: black;
+	cursor:pointer;
+	border: 2px solid lightgreen
+}
+
+a.top:hover, a:active {
+	cursor:pointer;
+    background-color: green;
+    color: white;
+}
